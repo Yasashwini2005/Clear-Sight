@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        p {
+            font-size: 16px;
+            color: #555555;
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p><strong>Name:</strong> {{ result.name }}</p>
+        <p><strong>Email:</strong> {{ result.email }}</p>
+        <p><strong>Age:</strong> {{ result.age }}</p>
+        <p><strong>Gender:</strong> {{ result.gender }}</p>
+        <p><strong>Description:</strong> {{ result.description }}</p>
+        <p><strong>Prediction:</strong> {{ result.prediction }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
